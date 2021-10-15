@@ -6,7 +6,7 @@ import TypePLayers from './typeplayers/TypePlayers'
 import ShowPlayers from './showplayers/ShowPlayers'
 
 function Game(props) {
-    const [level,setLevel] = useState(1)
+    const [level,setLevel] = useState(2)
 
     const [qt ,setQt] = useState(3)
     

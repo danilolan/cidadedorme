@@ -1,0 +1,41 @@
+$cinzaAzulado: #22223B;
+$cinzaClaro: #4a4e69e5;
+$vermelhoClaro: #FF8C64;
+$vermelhoEscuro: #FF665A;
+$amarelo: #FFF587;
+$verde: #3EB595;
+$preto: #1A1A1A;
+
+
+.card{ 
+    background: $preto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max;
+    border: 3px solid #0e0e0e;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    img{
+        width: 100%;
+        margin: auto;
+    }
+    .title{
+        padding-top: 10px;
+        font-weight: 500;
+    }
+    i{
+        position: absolute;
+        color: $verde;
+        opacity: 0;   
+    }
+}
+.card.checked{
+    border: 3px solid #3EB595;
+    i{
+        opacity: 1;
+    }
+}
