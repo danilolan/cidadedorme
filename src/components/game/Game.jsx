@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './game.css'
+import './game.scss'
 
 import QtPlayers from './qtplayers/QtPlayers';
 import TypePLayers from './typeplayers/TypePlayers'
@@ -7,6 +7,8 @@ import ShowPlayers from './showplayers/ShowPlayers'
 
 function Game(props) {
     const [level,setLevel] = useState(1)
+
+    const [qt ,setQt] = useState(3)
     
     function render(){
         switch(level){
@@ -18,7 +20,8 @@ function Game(props) {
         }
     }
 
-    function nextLevel(){
+    function nextLevel(qt){
+        setQt(qt)
         switch(level){
             case 1: setLevel(2) 
                 break

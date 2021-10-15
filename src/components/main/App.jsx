@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import 'font-awesome/css/font-awesome.min.css'
 
 import Game from '../game/Game'
 

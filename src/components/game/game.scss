@@ -1,0 +1,28 @@
+.game{
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff2;
+    border-radius: 20px;
+}
+
+.nextbutton{
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0px;
+    height: 60px;
+    width: 200px;
+    color: white;
+    font-size: 1.7em;
+    background: #506AD4;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+
+    &:hover{
+        background: #506ad494;
+        cursor: pointer;
+    }
+}

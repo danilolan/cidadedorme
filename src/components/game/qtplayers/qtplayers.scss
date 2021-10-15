@@ -1,0 +1,74 @@
+$vermelhoEscuro: #FF665A;
+$verde: #3EB595;
+
+.qtplayers{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    .text{
+        font-size: 1.5em;
+        margin: 10px 0px;
+        height: 60px;
+    }
+    .inputqt{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        button{
+            width: 50px;
+            height: 50px;
+            color: white;
+            border-radius: 50%;
+            border: none;
+            transition: 0.3s;
+            &.plus{
+                background: $verde;
+                &:hover{
+                    cursor: pointer;
+                    background: #0000;
+                    border: 1px solid $verde;
+                }
+                &:active{
+                    transform: translateY(4px);
+                }
+            }
+            &.minus{
+                background: $vermelhoEscuro;
+                &:hover{
+                    cursor: pointer;
+                    background: #0000;
+                    border: 1px solid $vermelhoEscuro;
+                }
+                &:active{
+                    transform: translateY(4px);
+                }
+            }
+
+        }
+        input{
+            margin: 0px 10px;
+            text-align: center;
+            font-size: 4em;
+            width: 100px;
+            height: 100px;
+            background: none;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            border: solid 2px #4a4e69e5;
+            border-radius: 5px;
+        }
+    }       
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+input[type="number"] {
+   -moz-appearance: textfield;
+}
