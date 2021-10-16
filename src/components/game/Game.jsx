@@ -12,9 +12,9 @@ function Game(props) {
     
     function render(){
         switch(level){
-            case 1: return <QtPlayers nextLevel={nextLevel}/>
+            case 1: return <QtPlayers nextLevel={nextLevel} resetLevel={resetLevel}/>
             case 2: return <TypePLayers nextLevel={nextLevel} resetLevel={resetLevel}/>
-            case 3: return <ShowPlayers resetLevel={resetLevel}/>
+            case 3: return <ShowPlayers resetLevel={resetLevel} />
 
             default: return <QtPlayers/>
         }

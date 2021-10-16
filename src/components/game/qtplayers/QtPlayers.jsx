@@ -4,7 +4,6 @@ import './qtplayers.scss'
 
 function QtPlayers(props) {
     const [qt, setQt] = useState(3);
-    /* const [oldQt, setOldQt] = useState(qt) */
 
     useEffect(function(){
         
@@ -16,10 +15,15 @@ function QtPlayers(props) {
         }
     }, [qt]);
 
+    function reset(){
+        props.resetLevel()
+        setQt(3)
+    }
+
     return ( 
         <div className="qtplayers">
             <div className="header">
-                <button className='resetbutton' onClick={e => props.resetLevel()}><i className="fa fa-undo"></i></button>
+                <button className='resetbutton' onClick={e => reset()}><i className="fa fa-undo"></i></button>
                 <div className="text">
                     Selecione a quantidade de jogadores:
                 </div>

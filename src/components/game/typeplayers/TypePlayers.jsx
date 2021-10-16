@@ -11,15 +11,6 @@ function TypePlayers(props) {
                                         
     function change(type){
         switch(type){
-            case 'assassino':
-                assassino ? setAssassino(false) : setAssassino(true)
-            break
-            case 'detetive':
-                detetive ? setDetetive(false) : setDetetive(true)
-            break
-            case 'vitima':
-                vitima ? setVitima(false) : setVitima(true)
-            break
             case 'anjo':
                 anjo ? setAnjo(false) : setAnjo(true)
             break
@@ -38,15 +29,15 @@ function TypePlayers(props) {
             </div>
 
             <div className="contentcards">
-                <button onClick={e => change('assassino')}>
+                <button className='typefix' onClick={e => change('assassino')}>
                     <Card type='Assassino' checked={assassino}/>
                 </button>
 
-                <button onClick={e => change('detetive')}>
+                <button className='typefix' onClick={e => change('detetive')}>
                     <Card type='Detetive' checked={detetive}/>
                 </button>
 
-                <button onClick={e => change('vitima')}>
+                <button className='typefix' onClick={e => change('vitima')}>
                     <Card type='Vitima' checked={vitima}/>
                 </button>
 
