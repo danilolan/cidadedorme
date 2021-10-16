@@ -21,15 +21,20 @@ function Card(props) {
         case 'Anjo': image = anjo
             break
     }
+    const [classes, setClasses] = useState('');
     
-
-    const [classes, setClasses] = useState('card');
-
+    
     useEffect(() => {
-        if(classes === 'card') setClasses('card checked')
-        else setClasses('card')
+        if(classes === ''){
+            if(props.checked === true) setClasses('card checked')
+            else setClasses('card')
+        }
+        else{
+            if(classes === 'card') setClasses('card checked')
+            else setClasses('card')  
+        }
     }, [props.checked]);
-
+    
     return (
         <div key={props.checked} className={classes}>
             <i className="fa fa-check-circle fa-2x"></i>

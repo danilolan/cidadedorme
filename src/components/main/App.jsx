@@ -7,7 +7,7 @@ import Game from '../game/Game'
 function App() {
   return (
     <div className="App">
-      <h1>Detetive</h1>
+      <h1>Cidade dorme</h1>
       <Game/>
     </div>
   );
