@@ -2,6 +2,7 @@ import React from 'react';
 
 
 function ShowPlayers(props) {
+    console.log(props.qt, props.types)
     return ( 
         <div className="showplayers">
             SHOWPLAYERS

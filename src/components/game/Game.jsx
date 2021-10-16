@@ -6,22 +6,30 @@ import TypePLayers from './typeplayers/TypePlayers'
 import ShowPlayers from './showplayers/ShowPlayers'
 
 function Game(props) {
-    const [level,setLevel] = useState(2)
-
+    const [level,setLevel] = useState(1)
+    
     const [qt ,setQt] = useState(3)
+    const [types, setTypes] = useState([])
     
     function render(){
         switch(level){
-            case 1: return <QtPlayers nextLevel={nextLevel} resetLevel={resetLevel}/>
-            case 2: return <TypePLayers nextLevel={nextLevel} resetLevel={resetLevel}/>
-            case 3: return <ShowPlayers resetLevel={resetLevel} />
+            case 1: return <QtPlayers nextLevel={nextLevel} resetLevel={resetLevel} getQt={getQt}/>
+            case 2: return <TypePLayers nextLevel={nextLevel} resetLevel={resetLevel} getTypes={getTypes}/>
+            case 3: return <ShowPlayers resetLevel={resetLevel} qt={qt} types={types}/>
 
             default: return <QtPlayers/>
         }
     }
 
-    function nextLevel(qt){
+    function getQt(qt){
         setQt(qt)
+    }
+
+    function getTypes(types){
+        setTypes(types)
+    }
+
+    function nextLevel(){
         switch(level){
             case 1: setLevel(2) 
                 break

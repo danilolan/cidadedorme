@@ -20,6 +20,11 @@ function QtPlayers(props) {
         setQt(3)
     }
 
+    function next(){
+        props.getQt(qt)
+        props.nextLevel()
+    }
+
     return ( 
         <div className="qtplayers">
             <div className="header">
@@ -37,7 +42,7 @@ function QtPlayers(props) {
                     <i className="fa fa-plus"></i>
                 </button>
             </div>
-            <button className='nextbutton' onClick={e => props.nextLevel(qt)}>
+            <button className='nextbutton' onClick={e => next()}>
                 Continuar <i className="fa fa-chevron-circle-right"></i>
             </button>
         </div>

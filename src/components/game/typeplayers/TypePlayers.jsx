@@ -4,10 +4,12 @@ import './typeplayers.scss'
 import Card from '../cards/Card';
 
 function TypePlayers(props) {
-    const [assassino, setAssassino] = useState(true);
-    const [detetive, setDetetive] = useState(true);
-    const [vitima, setVitima] = useState(true);
+    const assassino= true;
+    const detetive = true;
+    const vitima= true;
     const [anjo, setAnjo] = useState(false);
+
+    var types = []
                                         
     function change(type){
         switch(type){
@@ -17,6 +19,12 @@ function TypePlayers(props) {
 
             default: return
         }
+    }
+
+    function next(){
+        if(anjo) types.push('anjo')
+        props.getTypes(types)
+        props.nextLevel()
     }
 
     return ( 
@@ -45,7 +53,7 @@ function TypePlayers(props) {
                     <Card type='Anjo' checked={anjo}/>
                 </button>
             </div>         
-            <button className="nextbutton" onClick={e => props.nextLevel()}>Next</button>
+            <button className="nextbutton" onClick={e => next()}>Next</button>
             
         </div>
      );
