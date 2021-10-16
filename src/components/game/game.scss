@@ -1,3 +1,11 @@
+$cinzaAzulado: #22223B;
+$cinzaClaro: #4a4e69e5;
+$vermelhoClaro: #FF8C64;
+$vermelhoEscuro: #FF665A;
+$amarelo: #FFF587;
+$verde: #3EB595;
+$preto: #1A1A1A;
+
 .game{
     width: 500px;
     height: 500px;
@@ -7,28 +15,55 @@
     justify-content: center;
     border: 2px solid #fff2;
     border-radius: 20px;
-}
-
-.nextbutton{
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px 0px;
-    height: 60px;
-    width: 200px;
-    color: white;
-    font-size: 1.7em;
-    background: #506AD4;
-    border: none;
-    border-radius: 5px;
-    transition: 0.3s;
-
-    &:hover{
-        background: #506ad494;
-        cursor: pointer;
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
     }
-}
-
-.text{
-    font-size: 1.5em;
-    margin: 10px 0px;
-    height: 60px;
+    .nextbutton{
+        font-family: 'Montserrat', sans-serif;
+        margin: 10px 0px;
+        height: 62px;
+        width: 200px;
+        color: white;
+        font-size: 1.7em;
+        background: #506AD4;
+        border: none;
+        border-radius: 5px;
+        transition: 0.3s;
+    
+        &:hover{
+            background: #506ad494;
+            cursor: pointer;
+        }
+    }
+    
+    .resetbutton{
+        border: none;
+        background: $vermelhoEscuro;
+        color: white;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        margin-left: auto;
+        &:hover{
+            cursor: pointer;
+            background: #be443b;
+            transform: rotate(-70deg);
+        }
+    }
+    
+    .text{
+        font-size: 1.5em;
+        padding: 10px 0px;
+    }
 }

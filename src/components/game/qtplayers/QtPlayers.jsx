@@ -18,8 +18,11 @@ function QtPlayers(props) {
 
     return ( 
         <div className="qtplayers">
-            <div className="text">
-                Selecione a quantidade de jogadores:
+            <div className="header">
+                <button className='resetbutton' onClick={e => props.resetLevel()}><i className="fa fa-undo"></i></button>
+                <div className="text">
+                    Selecione a quantidade de jogadores:
+                </div>
             </div>
             <div className="inputqt">
                 <button className='minus' onClick={e => setQt(qt - 1)}>

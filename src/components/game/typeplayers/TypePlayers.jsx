@@ -30,8 +30,11 @@ function TypePlayers(props) {
 
     return ( 
         <div className="typeplayers">
-            <div className="text">
-                Selecione os tipos de personagem:
+            <div className="header">
+                <button className='resetbutton' onClick={e => props.resetLevel()}><i className="fa fa-undo"></i></button>
+                <div className="text">
+                    Selecione os tipos de personagem:
+                </div>
             </div>
 
             <div className="contentcards">
@@ -51,8 +54,8 @@ function TypePlayers(props) {
                     <Card type='Anjo' checked={anjo}/>
                 </button>
             </div>         
-    
-            <button className="nextbutton" onClick={e => props.nextLevel(e)}>Next</button>
+            <button className="nextbutton" onClick={e => props.nextLevel()}>Next</button>
+            
         </div>
      );
 }
