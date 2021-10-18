@@ -1,3 +1,11 @@
+$cinzaAzulado: #22223B;
+$cinzaClaro: #4a4e69e5;
+$vermelhoClaro: #FF8C64;
+$vermelhoEscuro: #FF665A;
+$amarelo: #FFF587;
+$verde: #3EB595;
+$preto: #1A1A1A;
+
 .showplayers{
     display: flex;
     position: relative;
@@ -11,5 +19,55 @@
         margin: 0;
         right: 0;
         top: 0;
+    }
+
+    .showcontent{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .start{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            background: $verde;
+            border: none;
+            outline: none;
+            padding: 30px;
+            font-size: 2.5em;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: 0.3s;
+            margin: auto;
+
+            &:hover{
+                cursor: pointer;
+                color: $verde;
+                background: #0000;
+                border: 3px solid $verde; 
+            }
+        }
+
+        .restart{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            background: $vermelhoEscuro;
+            border: none;
+            outline: none;
+            padding: 30px;
+            font-size: 2.5em;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: 0.3s;
+            margin: auto;
+
+            &:hover{
+                cursor: pointer;
+                color: $vermelhoEscuro;
+                background: #0000;
+                border: 3px solid $vermelhoEscuro; 
+            }
+        }
     }
 }

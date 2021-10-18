@@ -7,7 +7,7 @@ import ShowPlayers from './showplayers/ShowPlayers'
 import QtAssassino from './qtassassino/QtAssassino';
 
 function Game(props) {
-    const [level,setLevel] = useState(1)
+    const [level,setLevel] = useState(4)
     
     const [qt ,setQt] = useState(3)
     const [types, setTypes] = useState([])
@@ -18,7 +18,7 @@ function Game(props) {
             case 1: return <QtPlayers nextLevel={nextLevel} resetLevel={resetLevel} getQt={getQt}/>
             case 2: return <TypePLayers nextLevel={nextLevel} resetLevel={resetLevel} getTypes={getTypes}/>
             case 3: return <QtAssassino nextLevel={nextLevel} resetLevel={resetLevel} getQt={getQtAssassino}/>
-            case 4: return <ShowPlayers resetLevel={resetLevel} qt={qt} types={types} qtAssassino={qtAssassino}/>
+            case 4: return <ShowPlayers resetLevel={resetLevel} qt={qt} types={types} qtAssassino={qtAssassino} qtDetetive={1}/>
 
             default: return <QtPlayers/>
         }
