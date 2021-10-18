@@ -3,8 +3,12 @@ import './card.scss'
 
 import assassino from '../../../assets/assassino.png'
 import detetive from '../../../assets/detetive.png'
-import vitima from '../../../assets/vitima.png'
+import cidadao from '../../../assets/cidadao.png'
 import anjo from '../../../assets/anjo.png'
+import joker from '../../../assets/joker.png'
+import traidor from '../../../assets/traidor.png'
+import bruxa from '../../../assets/bruxa.png'
+import menino from '../../../assets/menino.png'
 
 function Card(props) {
     var image = ''
@@ -16,9 +20,17 @@ function Card(props) {
             break
         case 'Detetive': image = detetive
             break
-        case 'Vitima': image = vitima
+        case 'Cidadão': image = cidadao
             break
         case 'Anjo': image = anjo
+            break
+        case 'Joker': image = joker
+            break
+        case 'Traidor': image = traidor
+            break
+        case 'Bruxa': image = bruxa
+            break
+        case 'Menino': image = menino
             break
     }
     const [classes, setClasses] = useState('');

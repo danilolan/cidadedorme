@@ -6,8 +6,12 @@ import Card from '../cards/Card';
 function TypePlayers(props) {
     const assassino= true;
     const detetive = true;
-    const vitima= true;
+    const cidadao= true;
     const [anjo, setAnjo] = useState(false);
+    const [joker, setJoker] = useState(false);
+    const [traidor, setTraidor] = useState(false);
+    const [bruxa, setBruxa] = useState(false);
+    const [menino, setMenino] = useState(false);
 
     var types = []
                                         
@@ -16,6 +20,18 @@ function TypePlayers(props) {
             case 'anjo':
                 anjo ? setAnjo(false) : setAnjo(true)
             break
+            case 'joker':
+                joker ? setJoker(false) : setJoker(true)
+            break
+            case 'traidor':
+                traidor ? setTraidor(false) : setTraidor(true)
+            break
+            case 'bruxa':
+                bruxa ? setBruxa(false) : setBruxa(true)
+            break
+            case 'menino':
+                menino ? setMenino(false) : setMenino(true)
+            break
 
             default: return
         }
@@ -23,6 +39,11 @@ function TypePlayers(props) {
 
     function next(){
         if(anjo) types.push('anjo')
+        if(joker) types.push('joker')
+        if(traidor) types.push('traidor')
+        if(bruxa) types.push('bruxa')
+        if(menino) types.push('menino')
+
         props.getTypes(types)
         props.nextLevel()
     }
@@ -37,20 +58,36 @@ function TypePlayers(props) {
             </div>
 
             <div className="contentcards">
-                <button className='typefix' onClick={e => change('assassino')}>
+                <button className='typefix'>
                     <Card type='Assassino' checked={assassino}/>
                 </button>
 
-                <button className='typefix' onClick={e => change('detetive')}>
+                <button className='typefix' >
                     <Card type='Detetive' checked={detetive}/>
                 </button>
 
-                <button className='typefix' onClick={e => change('vitima')}>
-                    <Card type='Vitima' checked={vitima}/>
+                <button className='typefix'>
+                    <Card type={'Cidadão'} checked={cidadao}/>
                 </button>
 
                 <button onClick={e => change('anjo')}>
                     <Card type='Anjo' checked={anjo}/>
+                </button>
+
+                <button onClick={e => change('joker')}>
+                    <Card type='Joker' checked={joker}/>
+                </button>
+
+                <button onClick={e => change('traidor')}>
+                    <Card type='Traidor' checked={traidor}/>
+                </button>
+
+                <button onClick={e => change('bruxa')}>
+                    <Card type='Bruxa' checked={bruxa}/>
+                </button>
+
+                <button onClick={e => change('menino')}>
+                    <Card type='Menino' checked={menino}/>
                 </button>
             </div>         
             <button className="nextbutton" onClick={e => next()}>Next</button>
