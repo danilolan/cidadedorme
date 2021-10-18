@@ -65,5 +65,12 @@ $preto: #1A1A1A;
     .text{
         font-size: 1.5em;
         padding: 10px 0px;
+        display: inline-flex;
+    }
+    .evil{
+        color: $vermelhoEscuro; 
+    }
+    .good{
+        color: $verde;
     }
 }
