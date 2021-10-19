@@ -4,14 +4,16 @@ import './qtplayers.scss'
 
 function QtPlayers(props) {
     const [qt, setQt] = useState(3);
+    var minQt = props.qtAssassino + props.qtDetetive + props.types.length + 1
+    const maxQt = 50
 
     useEffect(function(){
         
-        if(qt === 1 || qt === 2){
-            setQt(3)
+        if(qt < minQt){
+            setQt(minQt)
         }
-        if(qt > 50){
-            setQt(50)
+        if(qt > maxQt){
+            setQt(maxQt)
         }
     }, [qt]);
 
@@ -37,7 +39,7 @@ function QtPlayers(props) {
                 <button className='minus' onClick={e => setQt(qt - 1)}>
                     <i className="fa fa-minus"></i>
                 </button>
-                <input type='number' value={qt} onChange={e => setQt(parseInt(e.target.value))}/>
+                <div className="qtlabel">{qt}</div>
                 <button className='plus' onClick={e => setQt(qt + 1)}>
                     <i className="fa fa-plus"></i>
                 </button>

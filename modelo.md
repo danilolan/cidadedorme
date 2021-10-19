@@ -1,4 +1,6 @@
 # Para fazer
+
+    adicio qtDetetive
     mudar a ordem dos levels
 
     adicionar quantidade minima de jogadores baseada nos personagens e na qtAssassino

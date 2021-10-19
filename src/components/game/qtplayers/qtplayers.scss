@@ -45,7 +45,10 @@ $verde: #3EB595;
             }
 
         }
-        input{
+        .qtlabel{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin: 0px 10px;
             text-align: center;
             font-size: 4em;

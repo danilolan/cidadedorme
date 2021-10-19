@@ -38,10 +38,7 @@ function ShowPlayers(props) {
         }
 
     }
-    function ShowPlayer(player){
-        
-    }
-
+    
     function start(){
         setPlayersArray(randomArray(qt, qtAss, qtDet, types))
         setLevel(level + 1)

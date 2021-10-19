@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState,useEffect } from 'react/cjs/react.development';
 import Card from '../cards/Card';
-import './qtassassino.scss'
+import './qtdetetive.scss'
 
-function QtAssassino(props) {
+function QtDetetive(props) {
     const [qt, setQt] = useState(1);
 
     useEffect(function(){
@@ -27,14 +27,14 @@ function QtAssassino(props) {
     }
 
     return ( 
-        <div className="qtassassino">
+        <div className="qtdetetive">
             <div className="header">
                 <button className='resetbutton' onClick={e => reset()}><i className="fa fa-undo"></i></button>
                 <div className="text">
-                    Selecione a quantidade de &nbsp;<div className="evil">assassinos</div>:
+                    Selecione a quantidade de &nbsp;<div className="good">detetives</div>:
                 </div>
             </div>
-            <Card type="Assassino" checked={false}/>
+            <Card type="Detetive" checked={false}/>
             <div className="inputqt">
                 <button className='minus' onClick={e => setQt(qt - 1)}>
                     <i className="fa fa-minus"></i>
@@ -51,4 +51,4 @@ function QtAssassino(props) {
      );
 }
 
-export default QtAssassino;
+export default QtDetetive;
