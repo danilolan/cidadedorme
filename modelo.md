@@ -1,16 +1,5 @@
 # Para fazer
 
-    adicio qtDetetive
-    mudar a ordem dos levels
-
-    adicionar quantidade minima de jogadores baseada nos personagens e na qtAssassino
-
-    QtPlayer: erro apagar todos os numer
-    qtPlayer: não da pra colocar o primeiro algorismo menor que 3
-
-
-
-
 
 
 # Modelo
