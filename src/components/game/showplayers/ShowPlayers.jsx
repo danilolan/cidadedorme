@@ -7,6 +7,7 @@ function ShowPlayers(props) {
     const [qt, qtAss,qtDet, types] = [props.qt, props.qtAssassino, props.qtDetetive, props.types]
     const [playersArray, setPlayersArray] = useState();
     const [level, setLevel] = useState(-1);
+    const [hidden, setHidden] = useState(true);
 
     function render(){
         if(level === -1){
@@ -28,12 +29,25 @@ function ShowPlayers(props) {
             )
         }
         else{
-            return (
-                <div className="showcontent">
-                    <Card type={playersArray[level]} checked={false}/>
-                    <button className="nextbutton" onClick={e => setLevel(level + 1)}>Next</button>
-                </div>
-            )
+            if(hidden){
+                return(
+                    <div className="showcontent">
+                        <div className="header">Clique no botão para ver seu personagem</div>
+                        <div className="cardhidden">{level + 1}/{qt}</div>
+                        <button className="showbtn" onClick={e => setHidden(false)}>Mostrar</button>
+                    </div>
+                )
+            }
+            else{
+                return (
+                    <div className="showcontent">
+                    <div className="header">Clique no botão e passe o celular para o próximo jogador</div>
+                        <Card type={playersArray[level]} checked={false} expand={true}/>
+                        <button className="nextbtn" onClick={e => nextCard()}>Próximo</button>
+                    </div>
+                )
+
+            }
             
         }
 
@@ -47,7 +61,10 @@ function ShowPlayers(props) {
         setLevel(0)
         setPlayersArray(randomArray(qt, qtAss, qtDet, types))
     }
-
+    function nextCard(){
+        setLevel(level + 1)
+        setHidden(true)
+    }
     return ( 
         <div className="showplayers">
             <button className='resetbutton' onClick={e => props.resetLevel()}><i className="fa fa-undo"></i></button>

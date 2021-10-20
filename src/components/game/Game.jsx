@@ -8,7 +8,7 @@ import QtAssassino from './qtassassino/QtAssassino';
 import QtDetetive from './qtdetetive/QtDetetive'
 
 function Game(props) {
-    const [level,setLevel] = useState(1)
+    const [level,setLevel] = useState(5)
     
     const [qt ,setQt] = useState(3)
     const [types, setTypes] = useState([])

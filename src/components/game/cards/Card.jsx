@@ -43,17 +43,21 @@ function Card(props) {
         }
         else{
             if(classes === 'card') setClasses('card checked')
-            else setClasses('card')  
+            else setClasses('card')
         }
     }, [props.checked]);
+
+    useEffect(() => {
+        if(props.expand) setClasses('card expand')
+    }, [props.expand]);
     
     return (
-        <div key={props.checked} className={classes}>
+        <div className={classes}>
             <i className="fa fa-check-circle fa-2x"></i>
             <img src={image} alt="carregando..." />
             <div className="title">
                 {props.type}
-            </div>
+            </div>           
         </div>
      );
 }

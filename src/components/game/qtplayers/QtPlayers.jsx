@@ -7,8 +7,7 @@ function QtPlayers(props) {
     var minQt = props.qtAssassino + props.qtDetetive + props.types.length + 1
     const maxQt = 50
 
-    useEffect(function(){
-        
+    useEffect(function(){       
         if(qt < minQt){
             setQt(minQt)
         }
