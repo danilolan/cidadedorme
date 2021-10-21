@@ -67,7 +67,7 @@ function ShowPlayers(props) {
     }
     return ( 
         <div className="showplayers">
-            <button className='resetbutton' onClick={e => props.resetLevel()}><i className="fa fa-undo"></i></button>
+            
             {render()}
         </div>
      );

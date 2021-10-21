@@ -17,11 +17,11 @@ function Game(props) {
     
     function render(){
         switch(level){
-            case 1: return <TypePLayers nextLevel={nextLevel} resetLevel={resetLevel} getTypes={getTypes}/>
-            case 2: return <QtAssassino nextLevel={nextLevel} resetLevel={resetLevel} getQt={getQtAssassino}/>
-            case 3: return <QtDetetive nextLevel={nextLevel} resetLevel={resetLevel} getQt={getQtDetetive}/>
-            case 4: return <QtPlayers nextLevel={nextLevel} resetLevel={resetLevel} getQt={getQt} qt={qt} types={types} qtAssassino={qtAssassino} qtDetetive={qtDetetive}/>
-            case 5: return <ShowPlayers resetLevel={resetLevel} qt={qt} types={types} qtAssassino={qtAssassino} qtDetetive={qtDetetive}/>
+            case 1: return <TypePLayers nextLevel={nextLevel} getTypes={getTypes}/>
+            case 2: return <QtAssassino nextLevel={nextLevel} getQt={getQtAssassino}/>
+            case 3: return <QtDetetive nextLevel={nextLevel} getQt={getQtDetetive}/>
+            case 4: return <QtPlayers nextLevel={nextLevel} getQt={getQt} qt={qt} types={types} qtAssassino={qtAssassino} qtDetetive={qtDetetive}/>
+            case 5: return <ShowPlayers qt={qt} types={types} qtAssassino={qtAssassino} qtDetetive={qtDetetive}/>
 
             default: return <QtPlayers/>
         }
@@ -64,6 +64,7 @@ function Game(props) {
 
     return ( 
         <div className="game">
+            <button className='resetbutton' onClick={e => resetLevel()}><i className="fa fa-undo"></i></button>
             {render()}
         </div>
      );

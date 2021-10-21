@@ -17,11 +17,12 @@ $preto: #1A1A1A;
     border-radius: 20px; 
     .header{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100%;
         position: relative;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     .nextbutton{
         font-family: 'Montserrat', sans-serif;
@@ -42,6 +43,9 @@ $preto: #1A1A1A;
     }
     
     .resetbutton{
+        position: absolute;
+        top: 0;
+        left: 0;
         border: none;
         background: $vermelhoEscuro;
         color: white;
@@ -53,7 +57,9 @@ $preto: #1A1A1A;
         align-items: center;
         justify-content: center;
         transition: 0.5s;
-        margin-left: auto;
+        margin: 10px;
+        z-index:9999;
+
         &:hover{
             cursor: pointer;
             background: #be443b;
@@ -64,12 +70,27 @@ $preto: #1A1A1A;
     .text{
         font-size: 1.5em;
         padding: 10px 0px;
-        display: inline-flex;
+        text-align: center;
     }
     .evil{
         color: $vermelhoEscuro; 
     }
     .good{
         color: $verde;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .game{
+        width: 100vw;
+        height: 80%;
+        border: none;
+
+        .resetbutton{
+
+        }
+        .header{
+            margin: 0;
+        }
     }
 }

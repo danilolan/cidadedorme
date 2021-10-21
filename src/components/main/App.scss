@@ -37,3 +37,20 @@ $preto: #1A1A1A;
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 550px){
+  .App{
+    .gamedisplay{
+      
+    }
+  }
+  
+}
+
+@media only screen and (max-height: 700px){
+  .App{
+    h1{
+      opacity: 0;
+    }
+  }
+
+}

@@ -49,3 +49,9 @@ $preto: #1A1A1A;
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 550px){
+    .card{
+        width: 40px;
+    }
+}

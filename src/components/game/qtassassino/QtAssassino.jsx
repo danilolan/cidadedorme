@@ -29,9 +29,9 @@ function QtAssassino(props) {
     return ( 
         <div className="qtassassino">
             <div className="header">
-                <button className='resetbutton' onClick={e => reset()}><i className="fa fa-undo"></i></button>
+                
                 <div className="text">
-                    Selecione a quantidade de &nbsp;<div className="evil">assassinos</div>:
+                    Selecione a quantidade de <span className="evil">assassinos</span>:
                 </div>
             </div>
             <Card type="Assassino" checked={false}/>

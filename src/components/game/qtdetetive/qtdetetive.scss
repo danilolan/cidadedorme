@@ -1,7 +1,7 @@
 $vermelhoEscuro: #FF665A;
 $verde: #3EB595;
 
-.qtassassino{
+.qtdetetive{
     height: 100%;
     width: 100%;
     display: flex;
@@ -74,4 +74,10 @@ input::-webkit-inner-spin-button {
 }
 input[type="number"] {
    -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 550px){
+    .qtdetetive{
+
+    }
 }

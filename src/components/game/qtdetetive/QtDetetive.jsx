@@ -29,9 +29,9 @@ function QtDetetive(props) {
     return ( 
         <div className="qtdetetive">
             <div className="header">
-                <button className='resetbutton' onClick={e => reset()}><i className="fa fa-undo"></i></button>
+                
                 <div className="text">
-                    Selecione a quantidade de &nbsp;<div className="good">detetives</div>:
+                    Selecione a quantidade de <span className="good">detetives</span>:
                 </div>
             </div>
             <Card type="Detetive" checked={false}/>

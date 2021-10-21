@@ -29,7 +29,7 @@ function QtPlayers(props) {
     return ( 
         <div className="qtplayers">
             <div className="header">
-                <button className='resetbutton' onClick={e => reset()}><i className="fa fa-undo"></i></button>
+                
                 <div className="text">
                     Selecione a quantidade de jogadores:
                 </div>
