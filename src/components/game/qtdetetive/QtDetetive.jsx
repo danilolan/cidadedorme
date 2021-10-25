@@ -16,10 +16,6 @@ function QtDetetive(props) {
         }
     }, [qt]);
 
-    function reset(){
-        props.resetLevel()
-        setQt(1)
-    }
 
     function next(){
         props.getQt(qt)

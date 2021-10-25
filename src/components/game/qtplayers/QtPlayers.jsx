@@ -16,11 +16,6 @@ function QtPlayers(props) {
         }
     }, [qt]);
 
-    function reset(){
-        props.resetLevel()
-        setQt(3)
-    }
-
     function next(){
         props.getQt(qt)
         props.nextLevel()
