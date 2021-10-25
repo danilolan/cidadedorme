@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c5c8a62f.chunk.css",
+    "main.js": "/static/js/main.68b5457c.chunk.js",
+    "main.js.map": "/static/js/main.68b5457c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f643707b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f643707b.js.map",
+    "static/css/2.f78674c2.chunk.css": "/static/css/2.f78674c2.chunk.css",
+    "static/js/2.ac2e9ccc.chunk.js": "/static/js/2.ac2e9ccc.chunk.js",
+    "static/js/2.ac2e9ccc.chunk.js.map": "/static/js/2.ac2e9ccc.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.f78674c2.chunk.css.map": "/static/css/2.f78674c2.chunk.css.map",
+    "static/css/main.c5c8a62f.chunk.css.map": "/static/css/main.c5c8a62f.chunk.css.map",
+    "static/js/2.ac2e9ccc.chunk.js.LICENSE.txt": "/static/js/2.ac2e9ccc.chunk.js.LICENSE.txt",
+    "static/media/anjo.5da1020b.png": "/static/media/anjo.5da1020b.png",
+    "static/media/assassino.68f2e6cc.png": "/static/media/assassino.68f2e6cc.png",
+    "static/media/bruxa.1c095056.png": "/static/media/bruxa.1c095056.png",
+    "static/media/cidadao.63d1e4e6.png": "/static/media/cidadao.63d1e4e6.png",
+    "static/media/detetive.6399bc49.png": "/static/media/detetive.6399bc49.png",
+    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/joker.cb37df3a.png": "/static/media/joker.cb37df3a.png",
+    "static/media/menino.a70c1c02.png": "/static/media/menino.a70c1c02.png",
+    "static/media/traidor.47114d2f.png": "/static/media/traidor.47114d2f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f643707b.js",
+    "static/css/2.f78674c2.chunk.css",
+    "static/js/2.ac2e9ccc.chunk.js",
+    "static/css/main.c5c8a62f.chunk.css",
+    "static/js/main.68b5457c.chunk.js"
+  ]
+}
