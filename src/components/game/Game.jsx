@@ -18,8 +18,8 @@ function Game(props) {
     function render(){
         switch(level){
             case 1: return <TypePLayers nextLevel={nextLevel} getTypes={getTypes}/>
-            case 3: return <QtAssassino nextLevel={nextLevel} getQt={getQtAssassino}/>
-            case 2: return <QtDetetive nextLevel={nextLevel} getQt={getQtDetetive}/>
+            case 2: return <QtAssassino nextLevel={nextLevel} getQt={getQtAssassino}/>
+            case 3: return <QtDetetive nextLevel={nextLevel} getQt={getQtDetetive}/>
             case 4: return <QtPlayers nextLevel={nextLevel} getQt={getQt} qt={qt} types={types} qtAssassino={qtAssassino} qtDetetive={qtDetetive}/>
             case 5: return <ShowPlayers qt={qt} types={types} qtAssassino={qtAssassino} qtDetetive={qtDetetive}/>
 
