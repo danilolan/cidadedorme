@@ -1,0 +1,12 @@
+.sidebar{
+    background-color: chartreuse;
+    position: absolute;
+    &.left{
+        left: 0;
+        margin-left: 10px;
+    }
+    &.right{
+        right: 0;
+        margin-right: 10px;
+    }
+}

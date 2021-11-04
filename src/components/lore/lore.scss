@@ -1,7 +1,121 @@
 .lore{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 50px 200px;
+    h2{
+        font-size: 2em;
+        border-bottom: solid 1px white;
+    }
+    h3{
+        font-size: 1.3em;
+        border-bottom: dashed 1px white;
+    }
+    p{
+        font-weight: 300;
+    }
+    .about{
+        padding-left: 10px;
+    }
+    .howtoplay{
+        padding-left: 10px;
+        .starting{
+            .step{
+                margin-bottom: 50px;
+                .number{
+                    background-color: #FFF5;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    font-size: 1.3em;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                .sequence{
+                    display: flex;
+                    margin-top: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    .cardstogether{
+                        display:flex;
+                    }
+                    i{
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+        .caracters{
+            .good{
+                color:#3EB595;
+                border: solid 1px #3EB595;
+                width: max-content;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            .neutro{
+                color:rgb(160, 160, 160);
+                border: solid 1px rgb(160, 160, 160);
+                width: max-content;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            .evil{
+                color:#FF665A;
+                border: solid 1px #FF665A;
+                width: max-content;
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            .caractitle{
+                font-weight: 500;
+                border-bottom: 1px solid white;
+                width: max-content;
+                margin-bottom: 10px;
+            }
+            .content{
+                display: grid;               
+                padding: 0px 10px;
+                align-items: center;
+                .function{
+                    margin: 10px;
+                }
+                .card{
+                    margin:0px auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .lore{
+        padding: 50px 20px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .lore{
+        .sequence{
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .title{
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (min-width: 750px){
+    .lore{   
+        .caracters{
+            .content{
+                grid-template-columns:1fr max-content;
+            }
+        }
+    }
 }
