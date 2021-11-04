@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <h1>Cidade dorme</h1>
       <div className="gamedisplay">
-        <Sidebar pos={true}/>
+        
         <Game/>
-        <Sidebar pos={false}/>
+        
       </div>
       <Lore/>
       <Footer/>
