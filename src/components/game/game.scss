@@ -41,6 +41,24 @@ $preto: #1A1A1A;
             cursor: pointer;
         }
     }
+
+    .nextbutton{
+        font-family: 'Montserrat', sans-serif;
+        margin: 10px 0px;
+        height: 62px;
+        width: 200px;
+        color: white;
+        font-size: 1.7em;
+        background: #506AD4;
+        border: none;
+        border-radius: 5px;
+        transition: 0.3s;
+    
+        &:hover{
+            background: #506ad494;
+            cursor: pointer;
+        }
+    }
     
     .resetbutton{
         position: absolute;
@@ -50,8 +68,8 @@ $preto: #1A1A1A;
         background: $vermelhoEscuro;
         color: white;
         border-radius: 50%;
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
         font-size: 1.5em;
         display: flex;
         align-items: center;
@@ -64,6 +82,31 @@ $preto: #1A1A1A;
             cursor: pointer;
             background: #be443b;
             transform: rotate(-70deg);
+        }
+    }
+    
+    .lorebutton{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: $cinzaClaro;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        margin: 10px;
+        z-index:9999;
+
+        &:hover{
+            cursor: pointer;
+            background: #8389b4e5;
+            transform: scale(1.2);
         }
     }
     

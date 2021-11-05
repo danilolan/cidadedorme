@@ -62,10 +62,15 @@ function Game(props) {
         setLevel(1)
     }
 
+    function scroolToLore(){
+        window.scrollTo(0,window.innerHeight)
+    }
+
     return ( 
         <div className="game">
             <button className='resetbutton' onClick={e => resetLevel()}><i className="fa fa-undo"></i></button>
             {render()}
+            <button className='lorebutton' onClick={e => scroolToLore()}><i className="fa fa-question"></i></button>
         </div>
      );
 }

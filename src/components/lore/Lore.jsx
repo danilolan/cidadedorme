@@ -57,11 +57,11 @@ function Lore(props) {
                         apenas não informando a morte daquele que foi salvo pelo Anjo.
                     </div>
                     <div className="step">
-                        <div className="number">5</div> Segue-se o debate
+                        <div className="number">5</div> Os jogadores debatem entre si
                     </div>
                     <div className="step">
-                        <div className="number">6</div> Após um tempo a ser determinado por Deus, todos devem votar a prisão de algum jogador. 
-                        O jogador mais votado defende-se por tempo a ser determinado por Deus.
+                        <div className="number">6</div> Após um tempo a ser determinado pelo narrador, todos devem votar a prisão de algum jogador. 
+                        O jogador mais votado defende-se por tempo a ser determinado pelo narrador.
                     </div>
                     <div className="step">
                         <div className="number">7</div> Após a defesa, nova votação é convocada. Se o resultado desta se alterar, uma nova defesa acontece. 
@@ -158,8 +158,8 @@ function Lore(props) {
                         <div className="caractitle">Assassino:</div>  
                         <div className="content">
                             <div className="function">
-                            em a função de eliminar todos os jogadores do bem seja eliminando quando são ordenados, seja indicando quando todos 
-                            estão escolhendo os suspeitos.
+                                Tem a função de eliminar todos os jogadores do bem seja eliminando quando são ordenados, seja indicando quando todos 
+                                estão escolhendo os suspeitos.
                             </div>
                             <Card type="Assassino"/>
                         </div>
