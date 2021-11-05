@@ -6,7 +6,8 @@ function Footer(props) {
     <footer className="footer">
         <span>
             Desenvolvido com <i className="fa fa-heart text-danger"></i> por
-            <strong> DaniloHerc</strong> 
+            <a href="https://www.linkedin.com/in/danilo-herculano-3906761b4/"><strong> DaniloHerc</strong> </a>
+            
         </span>
     </footer> );
 }
